@@ -13,11 +13,6 @@ def test_element_by_id(browser):
     # browser.find_element_by_id("column-right")
 
 
-# def test_element_by_link_text(browser):
-#     browser.get(url)
-#     browser.find_elements_by_partial_link_text("Address")
-
-
 def test_elements_by_css_selector(browser):
     my_waits = MyWaits(browser)
     browser.get(url)

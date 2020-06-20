@@ -1,7 +1,7 @@
 from explicit_wait import MyWaits
 
 
-url = "http://localhost//"
+url = "http://localhost/index.php?route=product/product&path=57&product_id=49"
 
 
 def test_element_by_id(browser):
@@ -13,18 +13,11 @@ def test_element_by_id(browser):
     # browser.find_element_by_id("search")
 
 
-# def test_element_by_link_text(browser):
-#     my_waits = MyWaits(browser)
-#     browser.get(url)
-#     my_waits.element("[name=Laptops]")
-#     # browser.find_element_by_partial_link_text("Laptops")
-
-
 def test_elements_by_css_selector(browser):
     my_waits = MyWaits(browser)
     browser.get(url)
-    my_waits.element(".btn-group.btn-block")
-    # browser.find_elements(By.CSS_SELECTOR, ".btn-group.btn-block")
+    my_waits.elements(".thumbnail")
+    # browser.find_elements(By.CSS_SELECTOR, ".thumbnail")
 
 
 def test_element_by_class_name_selector(browser):

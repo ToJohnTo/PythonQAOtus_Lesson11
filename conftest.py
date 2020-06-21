@@ -23,7 +23,7 @@ def driver_factory(browser):
 
 
 def pytest_addoption(parser):
-    parser.addoption("--browser", action="store", default="firefox")
+    parser.addoption("--browser", action="store", default="chrome")
 
 
 @pytest.fixture
